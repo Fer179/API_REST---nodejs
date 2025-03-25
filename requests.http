@@ -1,0 +1,28 @@
+GET http://localhost:3000/peliculas HTTP/1.1
+
+###
+
+GET http://localhost:3000/peliculas/2 HTTP/1.1
+
+###
+POST http://localhost:3000/peliculas HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Avengers",
+    "director": "Joss Whedon",
+    "genero": "Accion",
+    "anio": 2012
+}
+
+###
+
+PUT http://localhost:3000/peliculas/6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Avengers: Endgame",
+    "director": "Anthony Russo, Joe Russo",
+    "genero": "Accion",
+    "anio": 2019
+}

@@ -1,0 +1,22 @@
+{
+  "name": "api-simple---node-js",
+  "version": "1.0.0",
+  "description": "Practica de como hacer una api rest",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "api",
+    "nodejs"
+  ],
+  "author": "Fernando C",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
