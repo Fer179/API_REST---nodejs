@@ -26,3 +26,7 @@ Content-Type: application/json
     "genero": "Accion",
     "anio": 2019
 }
+
+###
+
+DELETE http://localhost:3000/peliculas/6 HTTP/1.1

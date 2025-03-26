@@ -66,6 +66,16 @@ app.put('/peliculas/:id', (req, res) => {
     res.json({message : 'Pelicula actualizada'});
 });
 
+app.delete('/peliculas/:id', (req, res) => {
+    const data = readData();
+    const id = parseInt(req.params.id);
+    const peliculaIndex = data.peliculas.findIndex(pelicula => pelicula.id == id);
+
+    data.peliculas.splice(peliculaIndex, 1);
+    writeData(data);
+    res.json({message : 'Pelicula eliminada'});
+});
+
 app.listen(3000, () => {  
     console.log('Server is running on port 3000'); 
 });
